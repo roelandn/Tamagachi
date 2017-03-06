@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tamagachi</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+    <script src="twitter-widget.js"></script>
+</head>
+<body>
+<main class="container" id="loading-screen">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+        <h1>Tamagachi</h1>
+        <div class="progress" id="loading-bar-container">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 50%" id="loading_bar">
+                0%
+            </div>
+        </div>
+        <p class="btn btn-default" id="continue-button" style="display: none;">Continue</p>
+    </div>
+</main>
+<main class="container" id="game-screen" style="display: none;">
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+            <h1>Tamagachi</h1>
+            <img width="184" id="artist_pic"/>
+            <h4 id="artist_name">Foo</h4>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%" id="hunger_bar">
+                    Hunger
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:70%" id="happiness_bar">
+                    Happiness
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:70%" id="cum_bar">
+                    Cum
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"><button onclick="groom('feed')" class="btn btn-default">Feed</button></div>
+                <div class="col-sm-4"><button onclick="groom('play')" class="btn btn-default">Play</button></div>
+                <div class="col-sm-4"><button onclick="groom('sex')" class="btn btn-default">Fuck</button></div>
+            </div><br/>
+            Cooldown
+            <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" style="width:0" id="cooldown_bar">
+                </div>
+            </div>
+            <a class="twitter-share-button"
+               href="https://twitter.com/intent/tweet?text=oh%20Im%20fucking%20cumming">
+                Tweet</a>
+        </div>
+    </div>
+</main>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="jquery.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
